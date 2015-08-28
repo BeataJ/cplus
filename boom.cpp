@@ -1,8 +1,9 @@
 #include<iostream>
 using namespace std;
 int main() {
-		int counter=10;
-		for (counter;counter>=0;counter--) 
+		int counter=0;
+		cout<<"Counting to the blast.please hide yourself \n";
+		for (counter;counter<=10;counter++) 
 			{
 				cout <<">>"<<counter<<endl;
 			}
