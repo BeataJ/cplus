@@ -1,29 +1,30 @@
+
 #include <cstdlib>
 #include<iostream>
 
 using namespace std;
 
 int main() {
-     int testnumber=10;
-     int quiznumber=15;
+     const int TESTNUMBER=10;
+    const  int QUIZNUMBER=15;
     float sum_q=0,avg_q;
     float sum_t=0,avg_t;
     
-    int tests(testnumber);
-    int quizes(quiznumber);
+    int tests(TESTNUMBER);
+    int quizes(QUIZNUMBER);
 	//entering  tests data
 	cout<<"Entering  test data for student"<<endl;
-	for (int i=0; i<testnumber;i++) {cout <<" Test "<< i <<"score = \t";cin>>tests[i]; }
+	for (i=0;i<TESTNUMBER;i++) {cout <<" Test "<< i <<"score = " << tests[i]<< endl;};
 	cout<<"Entering  quiz data for student "<<endl;
-	for (int i=0; i<quiznumber;i++) {cout <<" Quiz "<<i<<" score = \t";cin>>quizes[i]; }
+	for (i=0;i<QUIZNUMBER;i++) {cout <<" Quiz "<<i<<" score = " << quizes[i]<< endl;};
 	//calculating  average test result
 	
-	for (int i=0; i<testnumber;i++) {sum_t+=tests[i];};
-	avg_t=sum_t/testnumber;
+	for (i=0;i<TESTNUMBER;i++) {sum_t+=tests[i];};
+	avg_t=sum_t/TESTNUMBER;
 	 //calculating quiz average
 	 
-	 for (int i=0; i<quiznumber;i++) {sum_q+=quizes[i];};
-		avg_q=sum_q/quiznumber;
+	 for (i=0;i<QUIZNUMBER;i++) {sum_q+=quizes[i];}
+		avg_q=sum_q/QUIZNUMBER;
 	float totalScore;
 	totalScore=int(avg_t*0.60 +avg_q*0.40);
         
@@ -36,4 +37,3 @@ int main() {
 	    
         return 0;
 }
-
