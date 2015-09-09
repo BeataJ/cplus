@@ -5,22 +5,25 @@
 using namespace std;
 
 int main() {
-     const int TESTNUMBER=10;
-    const  int QUIZNUMBER=15;
+     const int TESTNUMBER=5;
+    const  int QUIZNUMBER=10;
     float sum_q=0,avg_q;
     float sum_t=0,avg_t;
     
     int tests[TESTNUMBER];
     int quizes[QUIZNUMBER];
 	//entering  tests data
-	cout<<"Entering  test data for student"<<endl;
+	cout<<"Entering test data for student"<<endl;
 	for (int i=0;i<TESTNUMBER;i++) {cout <<" Test "<< i <<" score = ";
 	cin>>tests[i];
+	if (tests[i]<0 || tests[i]>100) cout<<"out of range. Number is  less than 0 or >100";
 	}
 	cout<<"Entering  quiz data for student "<<endl;
 	for (int i=0;i<QUIZNUMBER;i++) {
 	cout <<" Quiz "<<i<<" score = "; 
 	cin>>quizes[i];
+	
+	if (quizes[i]<0 || quizes[i]>10) cout<<"out of range. Number is  less than 0 or >10";
 	}
 
 	//calculating  average test result
