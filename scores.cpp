@@ -14,16 +14,22 @@ int main() {
     int quizes(QUIZNUMBER);
 	//entering  tests data
 	cout<<"Entering  test data for student"<<endl;
-	for (i=0;i<TESTNUMBER;i++) {cout <<" Test "<< i <<"score = " << tests[i]<< endl;};
+	for (int i=0;i<TESTNUMBER;i++) {cout <<" Test "<< i <<" score = "
+	;cin>> tests[i];
+	}
 	cout<<"Entering  quiz data for student "<<endl;
-	for (i=0;i<QUIZNUMBER;i++) {cout <<" Quiz "<<i<<" score = " << quizes[i]<< endl;};
+	for (int i=0;i<QUIZNUMBER;i++) {
+	cout <<" Quiz "<<i<<" score = "; 
+	cin>> quizes[i];
+	}
+
 	//calculating  average test result
 	
-	for (i=0;i<TESTNUMBER;i++) {sum_t+=tests[i];};
+	for (int i=0;i<TESTNUMBER;i++) sum_t+=tests[i];
 	avg_t=sum_t/TESTNUMBER;
 	 //calculating quiz average
 	 
-	 for (i=0;i<QUIZNUMBER;i++) {sum_q+=quizes[i];}
+	 for (int i=0;i<QUIZNUMBER;i++) sum_q+=quizes[i];
 		avg_q=sum_q/QUIZNUMBER;
 	float totalScore;
 	totalScore=int(avg_t*0.60 +avg_q*0.40);
