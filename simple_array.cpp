@@ -4,7 +4,7 @@ int main(){
 const int SIZE=10;
 int  score[SIZE];
 
-cout<<"Enter scores as integer numbers: ";
+cout<<"Enter scores as integer numbers: "<<endl;
 for (int i=0;i<SIZE;i++)
 	{
 	cout<<"Score["<<i<<"=] ";
