@@ -10,17 +10,17 @@ int main() {
     float sum_q=0,avg_q;
     float sum_t=0,avg_t;
     
-    int tests(TESTNUMBER);
-    int quizes(QUIZNUMBER);
+    int tests[TESTNUMBER];
+    int quizes[QUIZNUMBER];
 	//entering  tests data
 	cout<<"Entering  test data for student"<<endl;
-	for (int i=0;i<TESTNUMBER;i++) {cout <<" Test "<< i <<" score = "
-	;cin>> tests[i];
+	for (int i=0;i<TESTNUMBER;i++) {cout <<" Test "<< i <<" score = ";
+	cin>>tests[i];
 	}
 	cout<<"Entering  quiz data for student "<<endl;
 	for (int i=0;i<QUIZNUMBER;i++) {
 	cout <<" Quiz "<<i<<" score = "; 
-	cin>> quizes[i];
+	cin>>quizes[i];
 	}
 
 	//calculating  average test result
