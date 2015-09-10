@@ -23,7 +23,8 @@ int main() {
 	cout <<" Quiz "<<i<<" score = "; 
 	cin>>quizes[i];
 	
-	if (quizes[i]<0 || quizes[i]>10) cout<<"out of range. Number is  less than 0 or >10";
+	if (quizes[i]<0 || quizes[i]>100) cout<<"out of range. Number is  less than 0 or >100";
+
 	}
 
 	//calculating  average test result
