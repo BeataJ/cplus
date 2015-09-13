@@ -16,3 +16,4 @@ int sumOfElements(int X[]) {
 	for (int i=0;i<size;i++) sum+=X[i];
 	return sum;
 }
+//additional testin required for function  sumOfElements as it ruturns wrong output 
