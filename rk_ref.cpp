@@ -4,7 +4,7 @@ using namespace std;
 //prototype  declarations 
 void wspolczynniki(double*  a,double* b, double* c);
 double delta(double a,double b,double c);//
-//double piewiastki(double a, double b, double c);
+void piewiastki(double a, double b, double c);
 
 //main function
 int main() {
@@ -25,4 +25,12 @@ void wspolczynniki(double *a,double *b, double*c) {
 double delta(double a,double b,double c)
 {
   return b*b -4*a*c;
+}
+
+void piewiastki(double* a, double* b, double* c) {
+if (*a==0) {
+cout<<" Postac rownania sprowadza sie do postaci liniowej bx+c=0";  
+cout<<" Rowzwiazaniem jest : "<<-(*b)/(*c);
+}
+else 
 }
