@@ -8,6 +8,7 @@ double delta(double a,double b,double c);//
 
 //main function
 int main() {
+double a,b,c;
 wspolczynniki(&a ,&b, &c);
 double d=delta(a,b,c);
 if (d<0) cout<<" Rownanie kwadratowe nie posiada pierwiastkow  w zbiorze liczb rzeczywistych"<<endl;
